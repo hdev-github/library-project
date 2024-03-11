@@ -1,4 +1,4 @@
-const button = document.getElementById("btn");
+const button = document.getElementsByClassName("btn");
 const form = document.getElementById("book-submission");
 button.addEventListener("click", displayForm);
 
