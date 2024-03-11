@@ -61,5 +61,9 @@ fieldset{
     border-radius: 10px;
     box-shadow: none;
     align-items: center;
-    cursor: pointer;
+    cursor: pointer
 }
+
+.btn#new {
+    width: 20% ;
+    }
