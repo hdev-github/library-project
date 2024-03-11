@@ -6,6 +6,10 @@ function displayForm() {
     if (form.style.display === 'none') {
         form.style.display = 'block'
     } else {form.style.display = 'none'}
+
+    if (newBook.style.display === 'block') {
+        newBook.style.display = 'none'
+    } else {newBook.style.display = 'block'}
 };
 const bookLibrary = [{title: 'Book 1', author: 'Author 1', pages: 100, isRead:  false}];
 
