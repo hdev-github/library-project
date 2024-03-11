@@ -1,6 +1,6 @@
-const button = document.getElementsByClassName("btn");
+const newBook = document.getElementById("new");
 const form = document.getElementById("book-submission");
-button.addEventListener("click", displayForm);
+newBook.addEventListener("click", displayForm);
 
 function displayForm() {
     if (form.style.display === 'none') {
