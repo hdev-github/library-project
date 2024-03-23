@@ -1,17 +1,37 @@
 * {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
 
-#book-submission {
-    display: none;
+#header {
+    font-size: 30px;
+    display:flex;
+    align-items: left;
+padding: 10px;
+margin: 10px;
 }
-body {
+#content {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+}
+.book-card {
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    background: none;
+    border: 2px solid #ffffff;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: none;
+    align-items: center;
+}
+body {
     height: 100vh;
     text-align: center;
     background: black;
@@ -23,13 +43,23 @@ legend {
     font-size: 50px;
 }
 
-fieldset{
+dialog {
+    background: black ;
+    color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
     text-align: left;
     font-size: 25px;
     padding: 20px;
     margin: 10px;
-    border: 2px solid #ffffff;
+    border: 2px none;
     border-radius: 10px;
+    line-height: 50px;
+
 }
 
 .status input[type="checkbox"] {
@@ -65,5 +95,8 @@ fieldset{
 }
 
 .btn#new {
-    width: 20% ;
+    width: auto;
+    display: flex;
+    flex-direction: column;
     }
+

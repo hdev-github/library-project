@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="javascript.js" defer></script>
-</head>
-<body>
-    <button class="btn" id="new" onclick="displayForm()">New Book</button>
-    <form id="book-submission">
+  </head>
+  <body>
+    <h1 id="header">My Book Library</h1>
+    <div id="book-container"></div>
+    <div id="content">
+      <button class="btn" id="new">New Book</button>
 
-    <fieldset>
-        <legend id="info">Book Info</legend>
+      <dialog>
+        <form id="submission-form">
+          <fieldset>
+            <legend id="info">Book Info</legend>
 
-    <div class="input-box">
-        <label for="title">Book Title:</label>
-        <input type="text" id="title" name="book-title" placeholder="Think and Grow Rich">
+            <div class="input-box">
+              <label for="title">Book Title:</label>
+              <input
+                type="text"
+                id="title"
+                name="book-title"
+                placeholder="Think and Grow Rich"
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="author">Author:</label>
+              <input
+                type="text"
+                id="author"
+                name="book-author"
+                placeholder="Napoleon Hill"
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="book-pages">Pages:</label>
+              <input
+                type="number"
+                id="book-pages"
+                name="book-pages"
+                placeholder="365"
+              />
+            </div>
+            <div class="status">
+              <label for="status">Have you read this book?</label>
+              <input
+                type="checkbox"
+                id="status"
+                name="book-status"
+                placeholder="Book Author"
+              />
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn" id="submit">Add to Library</button>
+        </form>
+      </dialog>
     </div>
-
-    <div class="input-box">
-        <label for="author">Author:</label>
-        <input type="text" id="author" name="book-author" placeholder="Napoleon Hill">
-    </div>
-
-    <div class="input-box">
-        <label for="book-pages">Pages:</label>
-        <input type="number" id="book-pages" name="book-pages" placeholder="365">
-    </div>
-    </fieldset>
-
-    <fieldset>
-    <div class="status">
-        <legend>Book Status</legend>
-        <label for="status">Have you read this book?</label>
-        <input type="checkbox" id="status-status" name="book-status" placeholder="Book Author">
-    </div>
-    </fieldset>
-
-    <button class="btn">Add to Library</button>
-
-    </form>
-    
-</body>
+  </body>
 </html>
-
 
 <!-- // (title, author, pages, isRead // -->
