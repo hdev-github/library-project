@@ -44,7 +44,7 @@ body {
 
 legend {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 dialog {
@@ -57,7 +57,7 @@ dialog {
 
 fieldset {
     text-align: left;
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px;
     margin: 10px;
     border: 2px none;
@@ -74,12 +74,13 @@ fieldset {
 
 .input-box input {
     width: 100%;
-    /* height: 30px; */
+    height: 30px;
     display: block;
     border: none;
     outline: none;
     border-radius: 10px;
     padding: 10px;
+    font-size: 15px;
 
 }
 
